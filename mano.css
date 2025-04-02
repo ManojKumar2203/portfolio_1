@@ -1,0 +1,186 @@
+/* General page styles */
+/* CSS (styles.css) */
+*body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.7;
+}
+
+.header {
+    background: linear-gradient(135deg, #00509e, #007cc7);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header h2, .header h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.header img {
+    width: 220px;
+    height: 220px;
+    border: 4px solid #fff;
+    object-fit: cover;
+}
+
+.container {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 6px;   
+    gap: 10px;
+    background-color: #3ccf4e;
+    outline: 3px #00509e solid;
+    outline-offset: -3px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.button svg path {
+    transition: 400ms;
+}
+
+.button:hover {
+    background-color: transparent;
+}
+
+.button:hover .text {
+    color: #00509e;
+}
+
+.button:hover svg path {
+    fill: #00509e;
+}
+
+.btn {
+    display: grid;
+    place-items: center;
+    background: #e3edf7;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
+}
+
+.btn svg {
+    transition: transform 0.5s;
+}
+
+.btn:hover svg {
+    transform: scale(0.9) rotate(360deg);
+    fill: #333333;
+}
+
+.section {
+    margin-bottom: 50px;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 8px solid #00a676;
+}
+
+.section h2 {
+    color: #00509e;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #00a676;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills span {
+    background: linear-gradient(135deg, #00a676, #3ccf4e);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+a {
+    color: #00509e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #ff8c00;
+}
+
+.footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+    margin-top: 30px;
+}
